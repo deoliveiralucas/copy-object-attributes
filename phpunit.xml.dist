@@ -10,7 +10,7 @@
          bootstrap                   = "test/bootstrap.php">
 
     <testsuites>
-        <testsuite name="CopyObjectAttributes Test Suite">
+        <testsuite name="CopyObjectAttributesValues Test Suite">
             <directory>test</directory>
         </testsuite>
     </testsuites>

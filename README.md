@@ -1,4 +1,4 @@
-# CopyObjectAttributeValues
+# CopyObjectAttributesValues
 
 [![Build Status](https://travis-ci.com/deoliveiralucas/copy-object-attributes-values.svg?branch=master)](https://travis-ci.com/deoliveiralucas/copy-object-attributes-values)
 [![Code Coverage](https://scrutinizer-ci.com/g/deoliveiralucas/copy-object-attributes-values/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/deoliveiralucas/copy-object-attributes-values/?branch=master)
@@ -55,4 +55,4 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## License
 
-CopyObjectAttributeValues is released under the MIT License. Please see [License File](LICENSE) for more information.
+CopyObjectAttributesValues is released under the MIT License. Please see [License File](LICENSE) for more information.
