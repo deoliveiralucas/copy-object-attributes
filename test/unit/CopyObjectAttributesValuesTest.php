@@ -31,22 +31,24 @@ class CopyObjectAttributesValuesTest extends TestCase
         $this->assertNotEquals($fromObject->attrCantBeChangedA(), $toObject->attrCantBeChangedB());
     }
 
-    /**
-     * @expectedException \RuntimeException
-     */
     public function testCopyFromInvalidParameter() : void
     {
+        $this->expectException(\RuntimeException::class);
+        $this->expectExceptionMessage(sprintf('Parameter to "string::from" must be an object, "%s" given', CopyObjectAttributesValues::class));
+
         CopyObjectAttributesValues::from('test');
     }
 
     /**
      * @dataProvider objectsToBeCopiedProvider
-     * @expectedException \RuntimeException
      *
      * @param ClassForAttributesATest $fromObject
      */
     public function testCopyToInvalidParameter(ClassForAttributesATest $fromObject) : void
     {
+        $this->expectException(\RuntimeException::class);
+        $this->expectExceptionMessage(sprintf('Parameter to "string::to" must be an object, "%s" given', CopyObjectAttributesValues::class));
+
         CopyObjectAttributesValues::from($fromObject)->to('test');
     }
 
