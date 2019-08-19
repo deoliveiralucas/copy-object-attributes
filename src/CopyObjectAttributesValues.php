@@ -23,7 +23,7 @@ class CopyObjectAttributesValues
     {
         if (! is_object($toObject)) {
             throw new \RuntimeException(
-                sprintf('Parameter to "%s::to" must be an object, "%s" given', gettype($toObject), static::class)
+                sprintf('Parameter to "%s::to" must be an object, "%s" given', gettype($toObject), __CLASS__)
             );
         }
 
@@ -48,7 +48,7 @@ class CopyObjectAttributesValues
     {
         if (! is_object($fromObject)) {
             throw new \RuntimeException(
-                sprintf('Parameter to "%s::from" must be an object, "%s" given', gettype($fromObject), static::class)
+                sprintf('Parameter to "%s::from" must be an object, "%s" given', gettype($fromObject), __CLASS__)
             );
         }
 
